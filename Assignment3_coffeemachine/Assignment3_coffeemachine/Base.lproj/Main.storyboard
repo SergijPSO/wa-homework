@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment3_coffeemachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x4z-US-8kH">
+                                <rect key="frame" x="0.0" y="0.0" width="414.66666666666669" height="736"/>
+                            </imageView>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffe Machine" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J7M-WB-sEE">
+                                <rect key="frame" x="139" y="18" width="136.66666666666663" height="31.333333333333329"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d5u-b9-PJ7">
+                                <rect key="frame" x="20" y="80" width="77.666666666666671" height="126.66666666666669"/>
+                                <subviews>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVy-mS-tEP">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="25.666666666666668"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Americano">
+                                                    <attributes>
+                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="prepeareAmericano:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E5c-rd-ybv"/>
+                                        </connections>
+                                    </button>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDy-w0-nfW">
+                                        <rect key="frame" x="0.0" y="33.666666666666671" width="77.666666666666671" height="25.666666666666671"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Latte">
+                                                    <attributes>
+                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="prepeareLatte:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AdW-tx-rvl"/>
+                                        </connections>
+                                    </button>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyF-xV-BXq">
+                                        <rect key="frame" x="0.0" y="67.333333333333343" width="77.666666666666671" height="25.666666666666671"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Espresso">
+                                                    <attributes>
+                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="prepeareEspresso:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Abb-pE-ZYU"/>
+                                        </connections>
+                                    </button>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAT-Jc-5jL">
+                                        <rect key="frame" x="0.0" y="101" width="77.666666666666671" height="25.666666666666671"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Cappuchino">
+                                                    <attributes>
+                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="prepeareCapuchino:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UMY-XS-Q8D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gAJ-D9-2J3">
+                                <rect key="frame" x="312" y="80" width="82" height="126.66666666666669"/>
+                                <subviews>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zi-hc-js4">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="25.666666666666668"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Clear wastes">
+                                                    <attributes>
+                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="clearWastes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uO-4n-9pO"/>
+                                        </connections>
+                                    </button>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDA-ee-CJC">
+                                        <rect key="frame" x="0.0" y="33.666666666666671" width="82" height="25.666666666666671"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Add milk">
+                                                    <attributes>
+                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addMilk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="22g-52-dPV"/>
+                                        </connections>
+                                    </button>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egN-JP-4tf">
+                                        <rect key="frame" x="0.0" y="67.333333333333343" width="82" height="25.666666666666671"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Add water">
+                                                    <attributes>
+                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addWatter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEu-Iz-zDT"/>
+                                        </connections>
+                                    </button>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GD5-gZ-s8r">
+                                        <rect key="frame" x="0.0" y="101" width="82" height="25.666666666666671"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Add coffee">
+                                                    <attributes>
+                                                        <font key="NSFont" size="10" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addCoffee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cgm-BU-TTd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee drink status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.65000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="QNt-jM-GiV">
+                                <rect key="frame" x="120" y="230.66666666666666" width="174" height="21.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WUR-zr-bx0">
+                                <rect key="frame" x="65" y="306.66666666666669" width="284" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="WUR-zr-bx0" firstAttribute="top" secondItem="QNt-jM-GiV" secondAttribute="bottom" constant="54.5" id="0Nc-ub-4QJ"/>
+                            <constraint firstItem="J7M-WB-sEE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="0PT-D3-sHK"/>
+                            <constraint firstItem="x4z-US-8kH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="11E-34-2yN"/>
+                            <constraint firstItem="d5u-b9-PJ7" firstAttribute="top" secondItem="J7M-WB-sEE" secondAttribute="bottom" constant="30.5" id="11K-2s-beH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WUR-zr-bx0" secondAttribute="trailing" constant="65" id="2YO-fm-m8o"/>
+                            <constraint firstItem="d5u-b9-PJ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BpU-3g-ZjG"/>
+                            <constraint firstItem="gAJ-D9-2J3" firstAttribute="top" secondItem="J7M-WB-sEE" secondAttribute="bottom" constant="30.5" id="ERk-rH-kk6"/>
+                            <constraint firstItem="WUR-zr-bx0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="OYH-8o-2o3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QNt-jM-GiV" secondAttribute="trailing" constant="120" id="S4I-Gr-12g"/>
+                            <constraint firstItem="x4z-US-8kH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ts4-Rg-Hld"/>
+                            <constraint firstItem="QNt-jM-GiV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="TzT-Zd-psH"/>
+                            <constraint firstItem="x4z-US-8kH" firstAttribute="centerX" secondItem="J7M-WB-sEE" secondAttribute="centerX" id="q7Q-Js-TGn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gAJ-D9-2J3" secondAttribute="trailing" constant="20" id="rDY-bf-vrd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J7M-WB-sEE" secondAttribute="trailing" constant="138.5" id="sjo-kR-nkp"/>
+                            <constraint firstItem="x4z-US-8kH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uvG-1X-V85"/>
+                            <constraint firstItem="J7M-WB-sEE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="xDT-5k-TT4"/>
+                            <constraint firstItem="QNt-jM-GiV" firstAttribute="top" secondItem="gAJ-D9-2J3" secondAttribute="bottom" constant="24" id="z2H-m5-hHd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="WUR-zr-bx0" id="ju3-BJ-hNU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.536231884057973" y="66.294642857142861"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coffee" width="155.33332824707031" height="233"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
