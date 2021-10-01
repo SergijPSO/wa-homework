@@ -22,7 +22,7 @@ class FirstScreenViewController: UIViewController {
         let secondScreenVC = segue.destination as! SecondScreenViewController
         secondScreenVC.sentName = userNameField.text
     }
-    //MARK: - IBOutlets
+    //MARK: - IBactions
     @IBAction func continueDidTap(_ sender: Any) {
         // If name text field isn`t empty go to next screen
         if userNameField.text != "" {

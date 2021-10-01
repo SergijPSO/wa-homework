@@ -8,13 +8,14 @@
 import UIKit
 
 class ThirdScreenViewController: UIViewController {
-
+    //MARK: - IBoutlets and variables
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var userSurnameLabel: UILabel!
 
     var sentSurname: String?
     var recievedName: String?
 
+    //MARK: Lyfecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         if let userSurname = sentSurname {
@@ -25,9 +26,8 @@ class ThirdScreenViewController: UIViewController {
         }
     }
 
-
+    //MARK: - IBactions
     @IBAction func saveDidTap(_ sender: Any) {
 
     }
-
 }
