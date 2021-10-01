@@ -18,6 +18,7 @@ class ThirdScreenViewController: UIViewController {
     //MARK: Lyfecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Unwrapping data
         if let userSurname = sentSurname {
             userSurnameLabel.text = "\(userSurnameLabel.text!) \(userSurname)"
         }
