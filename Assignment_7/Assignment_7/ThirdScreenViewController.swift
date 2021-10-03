@@ -8,6 +8,7 @@
 import UIKit
 
 class ThirdScreenViewController: UIViewController {
+
     //MARK: - IBoutlets and variables
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var userSurnameLabel: UILabel!
@@ -18,7 +19,7 @@ class ThirdScreenViewController: UIViewController {
     //MARK: Lyfecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Unwrapping data
+        //Appending data to view
         if let userSurname = sentSurname {
             userSurnameLabel.text = "\(userSurnameLabel.text!) \(userSurname)"
         }
@@ -27,8 +28,16 @@ class ThirdScreenViewController: UIViewController {
         }
     }
 
+    // Prepearing segue for first vc and passing data nj first vc
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let firstScreenVC = segue.destination as! FirstScreenViewController
+        firstScreenVC.name = recievedName!
+        firstScreenVC.surname = sentSurname!
+    }
+
     //MARK: - IBactions
     @IBAction func saveDidTap(_ sender: Any) {
-
+        performSegue(withIdentifier: "goToFirst", sender: self)
     }
+
 }

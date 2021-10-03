@@ -24,9 +24,8 @@ class SecondScreenViewController: UIViewController {
         thirdScreenVC.sentSurname = userSurnameField.text
         thirdScreenVC.recievedName = sentName
     }
-    //MARK: - IBactions
+    //MARK: - IBAction
     @IBAction func continueDidTap(_ sender: Any) {
-        // If name text field isn`t empty go to next screen
         if userSurnameField.text != "" {
             performSegue(withIdentifier: "goToThird", sender: self)
         }
