@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
         //Increasing counter to count taps
         counter += 1
-        //Cehckig state of tap gestere
+        //Checking state of tap gestere
         if sender.state == .ended {
 
             //Getting sizes of blackView from storyboard
