@@ -10,49 +10,33 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tapsLabel: UILabel!
-
     @IBOutlet weak var blackView: UIView!
 
-
+    var counter = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
 
-        let xPosition = CGFloat.random(in: 1..<102)
-        let yPosition = CGFloat.random(in: 1..<500)
+        counter += 1
+        print(counter)
 
         let width = blackView.frame.size.width
         let height = blackView.frame.size.height
+
         let frame = super.view.safeAreaLayoutGuide.layoutFrame
+
         let frameX = frame.width
         let frameY = frame.height
 
-        print(frameX)
+        let xPosition = CGFloat.random(in: 1..<(frameX - width))
+        let yPosition = CGFloat.random(in: 1..<(frameY - height))
 
-        switch sender.state {
-
-        case .possible:
-            print("Possible")
-        case .began:
-            var counter = 0
-            counter = counter + 1
-            tapsLabel.text = "\(counter)"
-            print("Began")
-        case .changed:
-            print("Changed")
-        case .ended:
+        if sender.state == .ended {
             self.blackView.frame = CGRect(x: xPosition, y: yPosition, width: width, height: height)
-        case .cancelled:
-            print("Canceled")
-        case .failed:
-            print("Failed")
-        @unknown default:
-            print("Something went wrong")
         }
-    }
 
+    }
 }
 
