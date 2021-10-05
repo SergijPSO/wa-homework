@@ -16,14 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lij-p7-aGA">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lij-p7-aGA">
                                 <rect key="frame" x="157" y="403" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="1hK-Hf-Oae"/>
-                                    <constraint firstAttribute="height" constant="100" id="C2M-i8-vpL"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="UVz-Zs-zqM" appends="YES" id="Ypw-00-YxX"/>
                                 </connections>
@@ -40,8 +37,6 @@
                         <constraints>
                             <constraint firstItem="AgZ-3b-PnQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5B9-OW-DG7"/>
                             <constraint firstItem="AgZ-3b-PnQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YKy-hY-fxT"/>
-                            <constraint firstItem="Lij-p7-aGA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ef2-vH-fBE"/>
-                            <constraint firstItem="Lij-p7-aGA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vBd-w0-88q"/>
                         </constraints>
                     </view>
                     <connections>
